@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/iut-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <div id="top"></div>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Lukas LEONIDAS</a>
+    </div>
+    <div class="right">
+	<a href="#top">
+            <i class="fa-solid fa-house"></i>
+            <span>Accueil</span>
+          </a>
+  <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Compétences</span>
+          </a>	        
+      <a href="#testimony">
+        <i class="fa-solid fa-file"></i>
+        <span>Projets</span>
+      </a>
+      <a href="javascript:void(0);" onclick="openModal()"><i class="fa-solid fa-file-pdf"></i> CV</a>
+      <a href="https://drive.google.com/file/d/1lW5fQydeJlYqTdj4vx3XI1oT6nnO434T/view?usp=sharing" target="_blank"><i class="fa-solid fa-file-video"></i> CV Vidéo</a>
+      <a href="#contact">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+  <main>
+    <!-- SECTION 1: Hero -->
+     <section class="fade-in">
+    <section id="about" section class="hero-section">
+      <div class="text">
+        <h2>À propos de moi</h2>
+        <p>Actuellement étudiant en BUT GEII, je développe des compétences à la croisée du développement web, de la maintenance et du support technique. Passionné par les nouvelles technologies, j’aime autant concevoir des solutions numériques qu’assurer leur bon fonctionnement au quotidien. Grâce à mes expériences, notamment en tant que technicien SAV, j’ai acquis une solide maîtrise du HTML, du SQL, du Python, ainsi qu’une bonne compréhension des problématiques de maintenance et de support client. Curieux et rigoureux, je cherche à continuer de développer mes compétences à la fois dans le développement et la maintenance de systèmes, afin de proposer des solutions complètes et adaptées aux besoins des utilisateurs. </p>      
+        <!-- Modale -->
+        <div id="cvModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="cvImage" src="CV_Lukas_Leonidas.jpg" alt="CV Lukas LEONIDAS">
+        </div>
+        
+        </div>        
+        </div>
+      </div>
+
+      <div class="headshot">
+	  <img src="images/photo.png" alt="lukas leonidas" title="Lukas LEONIDAS">
+      </div>
+    </section>
+    </section>
+    <!-- SECTION 1: Parcours -->
+    <section id="about" section class="hero-section">
+      <div class="text">
+        <h2>Mon parcours</h2>
+        <div class="timeline-container">
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2022</div>
+      <div class="timeline-content">
+        <h3>Baccalauréat Scientifique</h3>
+        <p>spécialités Mathématiques et Physique-Chimie</p>
+      </div>
+    </div>
+     <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">‎ </div>
+      <div class="timeline-content">
+        <h3>Entrée en BUT GEII</h3>
+        <p2>à l'IUT D'Évry Val d'Essonne</p2>
+        <p>Spécialisation en Automatisme et Informatique Industrielle en 2e année  </p>
+      </div>
+    </div>
+     <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2024</div>
+      <div class="timeline-content">
+        <h3>Stage - Développeur web (ODPO)</h3>
+        <p>Développement d'interface de CRM (HTML,SQL,PHP).</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2025</div>
+      <div class="timeline-content">
+        <h3>Stage - Technicien SAV (ADVANTECH-AURES) </h3>
+        <p>Maintenance, diagnostic, support client, réparation matériels.</p>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    <!-- SECTION 2: Skills -->
+     <section class="fade-in">
+    <section id="skills" class="skills-section">
+      <h2>Mes compétences</h2>
+      <div class="text">
+       Au fil de mes études et projets personnels, j’ai développé une solide maîtrise des langages et outils techniques, ainsi que des compétences transversales essentielles pour mener à bien mes réalisations dans le monde professionnel.
+        
+      </div>
+      <h3>Compétences techniques</h3>
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+          <div class="tooltip">Création de pages web statiques et interactives.</div>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+          <div class="tooltip">Mis en forme de pages web.</div>
+        </div>
+        
+        <div class="cell">
+          <img src="images/sql-logo.svg" alt="sql logo">
+          <span>SQL</span>
+          <div class="tooltip">Gestion et organisation de bases de données.</div>
+        </div>
+        
+		<div class="cell">
+          <img src="images/python.svg" alt="python logo">
+          <span>Python</span>
+          <div class="tooltip">Développement de supervision et jeux web (OpenCV, Flask).</div>
+        </div>
+
+        <div class="cell">
+          <img src="images/cicon.png" alt="c logo">
+          <span>C</span>
+          <div class="tooltip">Programmation pour systèmes embarqués et projets électroniques.</div>
+        </div>
+      </div>
+      <h3>Compétences transversales</h3>
+      <div class="cells">
+        <div class="cell">
+          <span>Esprit d'équipe</span>
+        </div>
+        <div class="cell">
+          <span>Autonome</span>
+        </div>
+        <div class="cell">
+          <span>Adaptabilité</span>
+        </div>
+        <div class="cell">
+          <span>Dynamique </span>
+        </div>
+        <div class="cell">
+          <span>Communication</span>
+        </div>
+      </div>
+    </section>
+    </section>
+    <!-- SECTION 3: Testimony -->
+     <section class="fade-in">
+    <section id="testimony" class="testimony-section">
+      <h2>Mes projets</h2>
+      <div class="projet">
+        <p>Voici les projets que j’ai réalisés au cours de ma formation, reflétant mes compétences techniques ainsi que mon aptitude à gérer des problématiques concrètes. </p>
+        <div class="text">
+        <h4>Robot Sumo</h4>
+        <div class="project-image-container">
+        <img src="images/robot-sumo.png" title="Jeu Robot Sumo" width="550" height="450" style="border-radius:5px; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+        </div>
+        <p>Jeu vidéo multijoueur en python inspiré d’un projet réel où nous avons codé des robots pour combattre dans un dohyo, en utilisant capteurs et stratégies afin de l'emporter sur l'adversaire.</p>
+        <p>Le jeu simule les combats entre les robots pour la partie réaliste.</p>
+        <p>La gestion des déplacements inclut des collisions précises pour un combat réaliste.</p>
+        <p>Le mode multijoueur est développé avec une librairie python nommé Flask, permettant à plusieurs joueurs de s’affronter en temps réel.</p>
+        <p>Ce projet m’a permis d’appliquer des concepts d’algorithmique et de savoir gérer des réseau.</p>
+        <a href="https://github.com/lukaslnds/jeurobotsumo  " download class="btn-download-cv">
+          <i class="fa-solid fa-download"></i>
+        Lien vers le jeu</a>
+         
+        <h4>Interface humain machine (IHM)</h4>
+        <img src="images/ihm-fraisier.png" title="Interface de supervision du projet fraisier" width="550" height="450" style="border-radius:5px; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+<p>Conception d’un système de surveillance de fraisier, utilisant des capteurs d’humidité du sol, de température et de luminosité, etc....</p>
+<p>Automatisation de l’arrosage et de l’éclairage selon les données, afin d’assurer des conditions optimales pour la croissance de la plante.</p>
+<p>Affichage des mesures via une interface de supervision.</p>
+        </div>
+      </div>
+    </section>
+</section>
+    <!-- SECTION 4: Contact -->
+     <section class="fade-in">
+    <section id="contact" class="contact-section">
+      <h2>Me contacter</h2>
+      
+      <div class="group">
+        <div class="text">  
+        Si vous avez des questions, des idées de collaboration ou simplement envie de discuter, n'hésitez pas à me contacter ! Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais..
+        <div class="links">
+        <a href="https://linkedin.com/in/lukas-leonidas">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Lukas LEONIDAS</span>
+          <br/>
+          <a href="https://drive.google.com/file/d/1xG0lL0_Z8yoU_hTXZTyBYAtDiBLqX5ID/view?usp=sharing" download class="btn-download-cv">
+          <i class="fa-solid fa-download"></i>
+          Télécharger mon CV</a>
+        </a>
+      </div>  
+      </div>
+<div id="success-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <p>Merci ! Votre message a bien été envoyé.</p>
+  </div>
+</div>
+
+<form id="contact-form">
+    <label for="name">Votre nom :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Votre e-mail :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Objet :</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Envoyer</button>
+</form>
+<div id="form-status"></div>
+      </div>
+    </section>
+    </section>
+  </main>
+</body>
+</html>
+<script>
+// Fonction pour ouvrir la modale et afficher l'image
+// Ouvrir la modale
+function openModal() {
+    var modal = document.getElementById("cvModal");
+    modal.style.display = "block";
+
+    // Cacher la barre de navigation pendant l'affichage de la modale
+    document.querySelector('nav').style.display = 'none';
+}
+
+// Fermer la modale
+function closeModal() {
+    var modal = document.getElementById("cvModal");
+    modal.style.display = "none";
+    
+    // Rétablir la barre de navigation une fois la modale fermée
+    document.querySelector('nav').style.display = 'flex';
+}
+
+// Lorsque l'utilisateur clique en dehors de l'image, on ferme la modale
+window.onclick = function(event) {
+    var modal = document.getElementById("cvModal");
+    if (event.target === modal) {
+        closeModal();
+    }
+}
+// Sélection de l'image dans la modale
+const modalContent = document.querySelector('.modal-content');
+
+// Initialisation du facteur de zoom
+let zoomFactor = 1;
+
+// Fonction pour appliquer le zoom
+function zoomImage(event) {
+  // Empêche le défilement de la page lors du zoom avec la molette
+  event.preventDefault();
+
+  // Si l'utilisateur fait défiler la molette de la souris
+  if (event.deltaY < 0) {
+    zoomFactor *= 1.1; // Zoom avant
+  } else {
+    zoomFactor /= 1.1; // Zoom arrière
+  }
+
+  // Limite du zoom
+  zoomFactor = Math.max(1, Math.min(zoomFactor, 3)); // Min 1x, max 3x
+
+  // Applique le zoom à l'image
+  modalContent.style.transform = `translate(-50%, -50%) scale(${zoomFactor})`;
+}
+
+// Ajoute un écouteur d'événement pour la molette de la souris
+modalContent.addEventListener('wheel', zoomImage);
+
+// Fonction pour zoomer avec le clic gauche de la souris
+let isMouseDown = false;
+
+modalContent.addEventListener('mousedown', (event) => {
+  if (event.button === 0) { // Clic gauche
+    isMouseDown = true;
+    event.preventDefault(); // Empêche le comportement par défaut (sélection de texte)
+  }
+});
+
+modalContent.addEventListener('mouseup', () => {
+  isMouseDown = false;
+});
+
+modalContent.addEventListener('mousemove', (event) => {
+  if (isMouseDown) {
+    // Calcul du zoom en fonction du mouvement de la souris
+    const movement = event.movementY; // Distance parcourue en Y (haut/bas)
+
+    if (movement < 0) {
+      zoomFactor *= 1.1; // Zoom avant
+    } else {
+      zoomFactor /= 1.1; // Zoom arrière
+    }
+
+    // Limite du zoom
+    zoomFactor = Math.max(1, Math.min(zoomFactor, 3)); // Min 1x, max 3x
+
+    // Applique le zoom à l'image
+    modalContent.style.transform = `translate(-50%, -50%) scale(${zoomFactor})`;
+  }
+});
+// Ajoute un offset au défilement pour compenser la barre de navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+    window.scrollTo({
+      top: target.offsetTop - document.querySelector('nav').offsetHeight,
+      behavior: 'smooth'
+    });
+  });
+});
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const data = new FormData(form);
+    const action = "https://formspree.io/f/manjjyww"; // ton vrai lien Formspree
+
+    try {
+        const response = await fetch(action, {
+            method: "POST",
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            form.reset();
+            alert("Merci ! Votre message a bien été envoyé.");
+        } else {
+            alert("Une erreur est survenue. Veuillez réessayer.");
+        }
+    } catch (error) {
+        alert("Impossible de contacter le serveur.");
+    }
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-in').forEach(el => {
+  observer.observe(el);
+});
+</script>
