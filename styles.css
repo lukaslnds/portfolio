@@ -116,12 +116,13 @@ nav .right a span {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* <= clé ici */
   padding: 0 50px;
   margin: 50px 0;
   margin-bottom: 100px;
   gap: 40px;
 }
+
 
 .hero-section .text {
   flex: 5;
@@ -152,6 +153,7 @@ nav .right a span {
 
 .hero-section .headshot {
   flex: 2;
+  margin-top: 75px;
   justify-content: left;
 }
 
