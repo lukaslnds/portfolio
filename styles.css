@@ -11,7 +11,6 @@
     --border-color: #e0e0e0;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -28,12 +27,14 @@ body {
   background-color: var(--background-color);
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 80px; /* Ajuste cette valeur selon la hauteur de ta navbar */
 }
+
 .projet {
   display: flex;
   flex-direction: column; /* pour que le texte soit en colonne */
   align-items: center;    /* centre horizontalement */
-  text-align: center;     /* centre le texte à l’intérieur */
+  text-align: center;     /* centre le texte à l'intérieur */
   gap: 15px;              /* espace entre les éléments */
 }
 
@@ -47,7 +48,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   padding: 0 50px;
   height: 65px;
   position: fixed;
@@ -59,10 +59,6 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre si tu veux un effet visuel */
 }
 
-/* Espacement pour que le contenu ne soit pas caché par la navbar */
-body {
-  padding-top: 80px; /* Ajuste cette valeur selon la hauteur de ta navbar */
-}
 .cell {
   position: relative;
   text-align: center;
@@ -93,6 +89,7 @@ body {
 .cell:hover .tooltip {
   opacity: 1;
 }
+
 nav .left a {
   color: var(--text-color);
   font-size: 22px;
@@ -114,7 +111,6 @@ nav .right a:last-child {
 nav .right a span {
   margin-left: 5px;
 }
-
 
 /* SECTION 1: Hero */
 .hero-section {
@@ -191,7 +187,6 @@ nav .right a span {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   width: 200px;
   padding: 10px 20px;
   margin: 10px;
@@ -304,92 +299,7 @@ nav .right a span {
   filter: brightness(.9);
 }
 
-@media (max-width: 850px) {
-  /* SECTION 1: Hero */
-  .hero-section .text h2 {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 740px) {
-  /* SECTION 1: Hero */
-  .hero-section {
-    flex-direction: column-reverse;
-  }
-
-  .hero-section .headshot img {
-    width: 300px;
-  }
-
-  /* SECTION 3: Testimony */
-  .testimony-section {
-    text-align: center;
-  }
-
-  .testimony-section .group {
-    flex-direction: column;
-  }
-
-  /* SECTION 4: Contact */
-  .contact-section .group {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  /* NAVBAR */
-  nav {
-    padding: 0 20px;
-  }
-
-  nav .right a {
-    font-size: 22px;
-  }
-
-  nav .right a:last-child {
-    color: var(--text-color);
-    background-color: transparent;
-    padding: 0;
-  }
-
-  nav .right a span {
-    display: none;
-  }
-
-  /* SECTION 1: Hero */
-  .hero-section {
-    padding: 0 20px;
-  }
-
-  .hero-section .text h2 {
-    font-size: 30px;
-  }
-
-  /* SECTION 2: Skills */
-  .skills-section {
-    padding: 0 20px;
-  }
-
-  .skills-section .cells .cell span {
-    font-size: 16px;
-  }
-
-  /* SECTION 3: Testimony */
-  .testimony-section {
-    padding: 0 20px;
-  }
-
-  /* SECTION 4: Contact */
-  .contact-section {
-    padding: 0 20px;
-  }
-}
-
 /* Style pour la fenêtre modale */
-/* Style pour la fenêtre modale */
-/* Modale */
-/* Modale */
-/* Modale */
 .modal {
   display: none;
   position: fixed;
@@ -401,12 +311,14 @@ nav .right a span {
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
 }
+
 h4 {
   font-size: 24px;
   font-weight: 600;
   color: var(--title-color);
   margin-bottom: 12px;
 }
+
 /* Contenu de la modale (l'image) */
 .modal-content {
   max-width: 100%;
@@ -421,31 +333,34 @@ h4 {
   transition: transform 0.2s ease;
   cursor: pointer; /* Modifié pour afficher un curseur de pointeur */
 }
+
 .hero-section h2 {
   font-size: 38px;
   font-weight: 700;
   color: var(--title-color);
   margin-bottom: 25px;
 }
+
 .testimony-section h2 {
   font-size: 38px;
   font-weight: 700;
   color: var(--title-color);
   margin-bottom: 25px;
 }
+
 .skills-section h2 {
   font-size: 38px;
   font-weight: 700;
   color: var(--title-color);
   margin-bottom: 25px;
 }
+
 .skills-section .text {
   font-size: 18px;
   color: var(--text-color);
   margin-bottom: 30px;
   font-weight: 400;
 }
-
 
 /* Bouton de fermeture */
 .close {
@@ -456,7 +371,6 @@ h4 {
   color: white;
   cursor: pointer;
 }
-
 
 .skills-section .transversal {
   display: flex;
@@ -486,53 +400,8 @@ h4 {
 .skills-section .transversal .skill-badge:hover {
   background-color: #3b5ecb;
 }
-.skills-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
-}
 
-.skills-section h2 {
-  font-size: 35px;
-}
-
-.skills-section .text {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.skills-section .cells {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.skills-section .cells .cell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  width: 200px;
-  padding: 10px 20px;
-  margin: 10px;
-  border: 1.5px solid #d3d3d3;
-  border-radius: 5px;
-}
-
-.skills-section .cells .cell img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  border-radius: 2px;
-}
-
-.skills-section .cells .cell span {
-  font-size: 18px;
-}
-
-
-parcours
-
+/* Parcours section */
 .parcours-section {
   padding: 0 50px;
   margin-bottom: 100px;
@@ -558,7 +427,6 @@ parcours
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   width: 200px;
   padding: 10px 20px;
   margin: 10px;
@@ -574,18 +442,21 @@ parcours
 }
 
 .parcours-section .cells .cell span {
-  -size: 18px;
+  font-size: 18px;
 }
+
 .timeline-container {
   overflow-x: auto;
   padding: 20px;
 }
+
 .timeline {
   display: flex;
   gap: 40px;
   align-items: center;
   position: relative;
 }
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -596,16 +467,19 @@ parcours
   background: #e0e0e0;
   z-index: -1;
 }
+
 .timeline-item {
   text-align: center;
   min-width: 180px;
   position: relative;
 }
+
 .timeline-date {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+
 .timeline-content {
   background: #f9f9f9;
   padding: 15px;
@@ -635,22 +509,6 @@ a:focus, button:focus {
   text-decoration: underline;
 }
 
-/* Bouton contact visible sur mobile */
-@media (max-width: 600px) {
-  .btn {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: none;
-  }
-  .btn:hover,
-  .btn:focus {
-    background-color: #005f87; /* un peu plus foncé */
-    color: white;
-    outline: none;
-  }
-}
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -661,10 +519,12 @@ a:focus, button:focus {
   opacity: 1;
   transform: none;
 }
+
 a, button {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   will-change: transform, box-shadow;
 }
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -710,12 +570,11 @@ a, button {
   justify-content: center;
 }
 
-
 .flip-card-front img {
   width: 100%;
   height: 80%;
   object-fit: cover;
-  display: block; /* Supprime l’espace blanc sous les images inline */
+  display: block; /* Supprime l'espace blanc sous les images inline */
   margin: 0;      /* Enlève marges éventuelles */
   padding: 0;     /* Enlève paddings éventuels */
 }
@@ -741,4 +600,336 @@ a, button {
   margin-top: 15px;
   color: #007bff;
   text-decoration: underline;
+}
+
+.hover-info {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* ===== AMÉLIORATIONS MOBILE ===== */
+
+@media (max-width: 850px) {
+  /* SECTION 1: Hero */
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+  
+  /* Amélioration des flip cards sur tablette */
+  .flip-card {
+    width: 250px;
+    height: 300px;
+  }
+  
+  /* Timeline plus compacte */
+  .timeline {
+    gap: 25px;
+  }
+  
+  .timeline-item {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 740px) {
+  /* SECTION 1: Hero */
+  .hero-section {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .hero-section .headshot img {
+    width: 250px;
+  }
+
+  /* SECTION 3: Testimony */
+  .testimony-section {
+    text-align: center;
+  }
+
+  .testimony-section .group {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* SECTION 4: Contact */
+  .contact-section .group {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Cards plus petites sur tablette */
+  .flip-card {
+    width: 220px;
+    height: 280px;
+  }
+  
+  .card-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* NAVBAR */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* SECTION 1: Hero */
+  .hero-section {
+    padding: 0 20px;
+    gap: 15px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+  
+  .hero-section .headshot img {
+    width: 200px;
+  }
+
+  /* SECTION 2: Skills */
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-section .cells .cell {
+    width: 160px;
+    padding: 8px 15px;
+    margin: 5px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+  
+  /* Skill badges plus petits */
+  .skills-section .transversal .skill-badge {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* SECTION 3: Testimony */
+  .testimony-section {
+    padding: 0 20px;
+  }
+  
+  .testimony-section .group .person-details img {
+    width: 150px;
+  }
+
+  /* SECTION 4: Contact */
+  .contact-section {
+    padding: 0 20px;
+  }
+  
+  /* Parcours section mobile */
+  .parcours-section {
+    padding: 0 20px;
+  }
+  
+  .parcours-section .cells .cell {
+    width: 160px;
+    padding: 8px 15px;
+    margin: 5px;
+  }
+  
+  /* Timeline mobile */
+  .timeline-container {
+    padding: 15px;
+  }
+  
+  .timeline {
+    gap: 20px;
+  }
+  
+  .timeline-item {
+    min-width: 120px;
+  }
+  
+  .timeline-date {
+    font-size: 1em;
+  }
+  
+  .timeline-content {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Cards responsive mobile */
+  .flip-card {
+    width: 100%;
+    max-width: 280px;
+    height: 250px;
+  }
+  
+  .card-container {
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  /* Bouton contact visible sur mobile */
+  .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-color: #005f87;
+    color: white;
+    outline: none;
+  }
+  
+  /* Modal mobile */
+  .modal-content {
+    max-width: 95%;
+    max-height: 95%;
+  }
+  
+  .close {
+    font-size: 40px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* Améliorations pour très petits écrans */
+@media (max-width: 480px) {
+  body {
+    padding-top: 70px;
+  }
+  
+  nav {
+    height: 60px;
+    padding: 0 15px;
+  }
+  
+  nav .left a {
+    font-size: 18px;
+  }
+  
+  nav .right a {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+  
+  /* Hero section très petit écran */
+  .hero-section {
+    padding: 0 15px;
+    margin: 30px 0 60px 0;
+  }
+  
+  .hero-section .text h2 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .hero-section .headshot img {
+    width: 160px;
+  }
+  
+  .hero-section .text .links a {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  /* Sections padding */
+  .skills-section,
+  .testimony-section,
+  .contact-section,
+  .parcours-section {
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+  
+  /* Titres plus petits */
+  .skills-section h2,
+  .testimony-section h2,
+  .contact-section h2,
+  .parcours-section h2 {
+    font-size: 28px;
+  }
+  
+  /* Skills cells encore plus compactes */
+  .skills-section .cells .cell,
+  .parcours-section .cells .cell {
+    width: 140px;
+    padding: 6px 12px;
+    margin: 3px;
+  }
+  
+  .skills-section .cells .cell img,
+  .parcours-section .cells .cell img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .skills-section .cells .cell span,
+  .parcours-section .cells .cell span {
+    font-size: 14px;
+  }
+  
+  /* Formulaire contact mobile */
+  .contact-section .group form input,
+  .contact-section .group form textarea {
+    padding: 12px;
+    font-size: 16px; /* Évite le zoom sur iOS */
+  }
+  
+  .contact-section .group form button {
+    height: 45px;
+    font-size: 16px;
+  }
+  
+  /* Cards en pleine largeur sur très petit écran */
+  .flip-card {
+    width: 100%;
+    max-width: 250px;
+    height: 220px;
+  }
+  
+  /* Timeline très compact */
+  .timeline-item {
+    min-width: 100px;
+  }
+  
+  .timeline-content {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  
+  /* Skill badges très petits */
+  .skills-section .transversal .skill-badge {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    margin: 2px;
+  }
+  
+  .skills-section .transversal {
+    padding: 8px 15px;
+    gap: 8px;
+  }
 }
