@@ -935,3 +935,51 @@ a, button {
     gap: 8px;
   }
 }
+#parcours {
+  margin-top: 120px; /* ajuste si besoin selon ton écran */
+}
+.btn-scroll {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 18px;
+  color: black;               /* texte noir */
+  text-decoration: none;
+  border: 2px solid black;    /* bordure noire */
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-scroll:hover {
+  background-color: #292929; /* gris très foncé */
+  color: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.left a {
+  position: relative;
+  color: #0077b5; /* couleur LinkedIn par ex */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* juste en dessous du texte */
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.3s ease;
+}
+
+.left a:hover::after {
+  width: 100%;
+}
